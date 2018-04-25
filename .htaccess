@@ -1,0 +1,6 @@
+RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /protextil1.0.4/index.php/$1 [L]
+ 
+    ErrorDocument 404 /protextil1.0.4/index.php
